@@ -31,7 +31,6 @@ app.listen(app.get('port'), function() {
 })
 
 // actions 
-
 function sendGenericMessage(sender) {
     messageData = {
         "attachment": {
