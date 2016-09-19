@@ -13,6 +13,12 @@ app.use(bodyParser.urlencoded({extended: false}))
 // Process application/json
 app.use(bodyParser.json())
 
+
+// Spin up the server
+app.listen(app.get('port'), function() {
+    console.log('running on port', app.get('port'))
+})
+
 // Index route
 app.get('/', function (req, res) {
     res.send('Hello world, I am a chat bot')
